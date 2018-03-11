@@ -9,5 +9,5 @@ class LearnObject:
 
     def write_learnobject(self, logtime):
         frozen = jsonpickle.encode(self)
-        with open("output/" + logtime.strftime("%Y-%m-%d_%H:%M:%S") + "_" + "learnlog.txt", "w") as outfile:
+        with open("output/" + logtime.strftime("%Y-%m-%d_%H:%M:%S") + "_" + "learnlog.json", "w") as outfile:
             outfile.write(frozen)
